@@ -6,7 +6,7 @@ function fetchWordleData(url, callback) {
   }
 
   function displayWordles() {
-    fetchWordleData('/wordle.json', function(wordleData) {
+    fetchWordleData('https://ixmr.github.io/wordle/wordle.json', function(wordleData) {
       const today = new Date().toISOString().slice(0, 10);
       const todaysWordle = wordleData[today];
       if (todaysWordle) {
